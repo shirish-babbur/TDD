@@ -1,0 +1,60 @@
+Tdd for Login Systems:
+
+Sample set input for this system is
+
+[	{correct username,correct password},
+	{blank username,correct password},
+	{blank username,Wrong password},
+	{Correct username,blank password},
+	{Wrong username,blank password},
+	{blank username,blank password},
+	{Correct username,Wrong password},
+	{Wrong username,Correct password},
+	{wrong username,wrong password}
+]
+
+Sample set of output is
+
+[	login successgully,
+	ERROR,
+	ERROR,
+	ERROR,
+	ERROR,
+	ERROR,
+	ERROR,
+	ERROR,
+	ERROR,
+]
+
+The positive input for this will be the subset,which will successfully login is this:
+
+[	{correct username,correct password}	]
+
+
+The negative input for this will be the subset which will yield an error is this:
+
+[	{blank username,correct password},
+	{blank username,Wrong password},
+	{Correct username,blank password},
+	{Wrong username,blank password},
+	{blank username,blank password},
+	{Correct username,Wrong password},
+	{Wrong username,Correct password},
+	{wrong username,wrong password}
+]
+
+So the acceptance criteria will be as follows:
+
+when we will have correct username and correct password  the result is Login Successfully.
+when we will have blank username and  correct password the result is ERROR.
+when we will have blank username and  Wrong password the result is ERROR.
+when we will have correct username and blank password  the result is ERROR.
+when we will have Wrong username and blank password  the result is ERROR.
+when we will have blank username and  blank password the result is ERROR.
+when we will have Correct username and Wrong password  the result is ERROR.
+when we will have Wrong username and Correct password  the result is ERROR.
+when we will have  Wrong usernameand Wrong password  the result is ERROR.
+
+
+
+
